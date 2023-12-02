@@ -4,10 +4,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
+# CRIAR PAGINA INICIAL APENAS PARA ALUNOS
 def student_page(request):
     template = loader.get_template('student-page.html')
     return HttpResponse(template.render())
 
+# ESTA PAGINA SERVE APENAS PARA LISTAR OS ALUNOS
 def show_students(request):
 
     students = {

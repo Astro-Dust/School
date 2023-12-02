@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <title>Student's page</title>
+  <title>Teacher's page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <h1>The students are listed below.</h1>
+  <h1>The teachers are listed below.</h1>
   <ul>
-    {% for student, age in students %}
-    <li>{{ student }} - {{ age }} anos</li>
+    {% for teacher, xp in teachers %}
+    <li>{{ teacher }} - {{ xp }} in years</li>
     {% endfor %}
   </ul>
 </body>
